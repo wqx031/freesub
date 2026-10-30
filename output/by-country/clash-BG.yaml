@@ -4,26 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 PH 01 - xiaohe
+- name: 🇧🇬 BG 01 - xiaohe
   type: vless
-  server: ph001.zestapp778.com
-  port: 15656
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  server: gb.privatevip.ir
+  port: 449
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ph001.zestapp778.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gb.privatevip.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 PH 01 - xiaohe
+  - 🇧🇬 BG 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 PH 01 - xiaohe
+  - 🇧🇬 BG 01 - xiaohe
 rules:
 - MATCH,PROXIES
