@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
   type: vless
-  server: base.hosamobenl.co.uk
+  server: 194.60.228.97
   port: 443
   uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   udp: true
