@@ -15,14 +15,33 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 136.148.83.69
+  server: 185.178.208.167
   port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: unlik.club
+  network: ws
+  ws-opts:
+    path: /static/telemetry/3c9aaef00005/
+    headers:
+      Host: tochkacdn.top
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: unlik.club
+  network: ws
+  ws-opts:
+    path: /static/telemetry/3c9aaef00005/
+    headers:
+      Host: tochkacdn.top
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
   server: 136.148.83.69
   port: 443
@@ -31,7 +50,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   type: vless
   server: 147.45.175.81
   port: 443
@@ -54,6 +73,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,5 +83,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
